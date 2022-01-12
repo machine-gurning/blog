@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  /* accounts for navbar */
+  margin-top: 50px;
+}
+
+.btn-standard {
+  background-color: transparent;
+  padding: 3px 0px;
+  font-size: 16px;
+  border: 0px;
+}
+
+.btn-standard:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Navbar */
+
+nav {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar-links-list {
+  /* Remove bullets */
+
+  list-style-type: none;
+  display: flex;
+}
+.navbar-links-list li {
+  font-size: 16px;
+  padding: 0px 10px;
+}
+
+.item-link {
+  /* Remove underline for link */
+  text-decoration: none;
+  /* Allows hovering over any part of the element to result in hover over text behaviour */
+  display: block;
+  /* Make text not blue */
+  color: black;
+}
+
+/* Simple central form */
+
+.central-form-box {
+  display: flex;
+}
+
+.central-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.central-form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.btn {
+  margin-top: 5px;
+}
+
+/* New post */
+
+.editor-container {
+  width: 600px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.new-post-title {
+  font-size: 20px;
+  width: 100%;
+  border: 0px;
+  margin-top: 40px;
+}
+
+.new-post-title:focus {
+  border: 0px;
+  outline: none;
+}
+
+/* blog post */
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  max-width: 500px;
+  width: 75vw;
+  margin: 20px 0px;
+}
+
+.blog-post-title {
+  font-size: 20px;
+  font-style: normal;
+  margin-bottom: 30px;
+}
+
+.blog-post-content {
+  white-space: pre-wrap;
+}
+
+.blog-post-info-box {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+.blog-post .date {
+  font-size: 16px;
+  font-style: italic;
+  color: lightgrey;
+  margin: 0px 10px;
+}
+
+.fa-icon {
+  height: 14px;
+  margin: 0px 10px;
+  color: lightgrey;
+}
+
+.fa-icon:hover {
+  color: grey;
+}
