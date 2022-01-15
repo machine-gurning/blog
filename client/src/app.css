@@ -14,7 +14,7 @@ section {
 
 .btn-standard {
   background-color: transparent;
-  padding: 3px 0px;
+  padding: 3px 4px;
   font-size: 16px;
   border: 0px;
 }
@@ -123,18 +123,18 @@ nav {
   margin: 20px 0px;
 }
 .blog-post .date {
+  padding: 3px 4px;
   font-size: 16px;
   font-style: italic;
   color: lightgrey;
   margin: 0px 10px;
 }
 
-.fa-icon {
-  height: 14px;
-  margin: 0px 10px;
-  color: lightgrey;
+.blog-post .btn-standard {
+  color: lightgray;
+  text-decoration-line: none;
 }
 
-.fa-icon:hover {
-  color: grey;
+.blog-post .btn-standard:hover {
+  color: black;
 }

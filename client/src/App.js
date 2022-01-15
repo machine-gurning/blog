@@ -4,7 +4,7 @@ import "./app.css";
 // Import pages
 import Home from "./pages/Home";
 import About from "./pages/About";
-import NewPost from "./pages/NewPost";
+import SinglePost from "./pages/SinglePost";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Error from "./pages/Error";
@@ -19,7 +19,8 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/about" element={<About />} />
-        <Route exact path="/newpost" element={<NewPost />} />
+        <Route exact path="/post/new" element={<SinglePost />} />
+        <Route exact path="/post/:id" element={<SinglePost />} />
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/register" element={<Register />} />
         <Route path="*" element={<Error />} />
